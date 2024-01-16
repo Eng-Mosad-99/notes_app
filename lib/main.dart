@@ -5,14 +5,10 @@ void main() {
 }
 
 class NotesApp extends StatelessWidget {
-  const NotesApp({Key? key}) : super(key: key);
+  const NotesApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      initialRoute: '',
-      routes: {},
-    );
+    return MaterialApp();
   }
 }
