@@ -9,8 +9,8 @@ class CustomElevatedButton extends StatelessWidget {
     return ElevatedButton(
       style: ElevatedButton.styleFrom(
         backgroundColor: kprimaryColor,
-        minimumSize: const Size(
-          double.infinity,
+        minimumSize: Size(
+          MediaQuery.of(context).size.width,
           50,
         ),
         shape: RoundedRectangleBorder(
@@ -24,6 +24,8 @@ class CustomElevatedButton extends StatelessWidget {
         'Add',
         style: TextStyle(
           color: Colors.black,
+          fontSize: 20,
+          fontWeight: FontWeight.bold,
         ),
       ),
     );
