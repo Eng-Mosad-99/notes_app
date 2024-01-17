@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:notes_app/constants.dart';
+import 'package:notes_app/widgets/custom_elevated_button.dart';
 import 'package:notes_app/widgets/custom_text_field.dart';
 
 class AddNoteButtomSheet extends StatelessWidget {
@@ -13,7 +15,7 @@ class AddNoteButtomSheet extends StatelessWidget {
       child: Column(
         children: [
           SizedBox(
-            height: 32,
+            height: 30,
           ),
           CustomTextField(
             hntText: 'title',
@@ -24,6 +26,13 @@ class AddNoteButtomSheet extends StatelessWidget {
           CustomTextField(
             hntText: 'content',
             maxLines: 6,
+          ),
+          Spacer(
+            flex: 4,
+          ),
+          CustomElevatedButton(),
+          Spacer(
+            flex: 1,
           ),
         ],
       ),
