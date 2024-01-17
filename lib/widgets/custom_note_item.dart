@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -23,7 +22,7 @@ class NoteItem extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.end,
         children: [
           ListTile(
-            title:const Text(
+            title: const Text(
               'Flutter Tips',
               style: TextStyle(
                 fontSize: 26,
@@ -39,7 +38,7 @@ class NoteItem extends StatelessWidget {
                 'Build your career with mohammed mosad',
                 style: TextStyle(
                   color: Colors.black.withOpacity(.5),
-                  fontSize: 18,
+                  fontSize: 16,
                 ),
               ),
             ),
